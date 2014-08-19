@@ -16,8 +16,12 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 gem 'bootstrap-sass'
+#User Authentication
 gem 'devise', '~> 3.1.0.rc2'
+#Attach Images. This gem is a Pain in the Ass.
 gem 'paperclip', github: 'thoughtbot/paperclip'
+#Amazon S3
+gem 'aws-sdk', '~> 1.20.0'
 
 group :development, :test do
 	# Use sqlite3 as the database for Active Record
