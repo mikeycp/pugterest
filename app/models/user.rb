@@ -6,6 +6,6 @@ class User < ActiveRecord::Base
 
   has_many :pins
 
-	validates :name, presence: true, length: { minimum: 2 }
+	validates :username, presence: true, length: { minimum: 2 }
 	validates :email, uniqueness: true
 end
