@@ -26,6 +26,8 @@ gem 'aws-sdk', '~> 1.20.0'
 #jquery Masonry
 gem 'masonry-rails', '~> 0.2.0'
 
+gem 'font-awesome-sass'
+
 
 group :development, :test do
 	# Use sqlite3 as the database for Active Record
