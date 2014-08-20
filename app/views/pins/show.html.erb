@@ -12,10 +12,11 @@
 				<p><%= @pin.description %></p>
 				<p><strong><%= @pin.user.email if @pin.user %></strong></p>
 
-				<% if @pin.user == current_user %>
-					<%= link_to pins_path do %>
+				<%= link_to pins_path do %>
 						<i class="fa fa-arrow-left"></i> Back
-					<% end %> |
+				<% end %> |
+
+				<% if @pin.user == current_user %>
 
 					<%= link_to edit_pin_path(@pin) do %>
               <span class="fa fa-pencil-square-o"></span> Edit
